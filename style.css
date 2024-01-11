@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(2, 0, 34);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.earth{
+    background: transparent url(earth.png);
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: inset 0px -20px 50px 10px #00ffff80,
+                0px 0px 30px 6px #00ffff80;
+    transform-style: preserve-3d;
+    transform: rotate(20deg);
+    animation: rodar 36s linear infinite;
+}
+@keyframes rodar{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 215px;
+    }
+    100%{
+        background-position: 530px;
+    }
+}
